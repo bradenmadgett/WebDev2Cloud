@@ -1,3 +1,5 @@
+//Creds to Ian via www.9bitstudios.com
+
 var auth = require('basic-auth');
 
 exports.BasicAuthentication = function(req, res, next){
