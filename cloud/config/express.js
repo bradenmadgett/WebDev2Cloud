@@ -20,7 +20,6 @@ app.set("view engine", "hb");
 app.set("views","./app/views");
 
 require("../app/routes/index.routes.js")(app);
-require("../app/routes/authorization.routes.js")(app);
 
 return app;
 };
