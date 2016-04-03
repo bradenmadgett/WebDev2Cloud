@@ -1,6 +1,6 @@
-var Authentication = require("../authorization");
+var Authorization = require("../authorization");
 
 module.exports = function(app) {
     var index = require("../controllers/index.controller");
-    app.get("/", Authentication.BasicAuthentication, index.render);
+    app.get("/", Authorization.BasicAuthentication, index.render);
 }
