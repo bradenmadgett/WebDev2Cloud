@@ -19,13 +19,12 @@ app.use(express_session({
 }))
 
 app.use(express.static("./public"));
-
 app.engine("hb", handlebars({defaultLayout:null}));
 app.set("view engine", "hb");
 app.set("views","./app/views");
 
-require("../app/routes/index.routes.js")(router);
-require("../app/routes/files.routes.js")(router);
+require("../app/routes/index.routes.js")(app);
+require("../app/routes/files.routes.js")(app);
 
 return app;
 };
