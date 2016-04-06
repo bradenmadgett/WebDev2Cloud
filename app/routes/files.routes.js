@@ -4,7 +4,6 @@ var multer = require('multer');
 
 module.exports = function(router) {
 
-
   var files = require("../controllers/files.controller");
   var upload = multer({dest: '../files/'});
 
